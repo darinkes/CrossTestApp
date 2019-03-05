@@ -1,0 +1,9 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow">
+  <StackPanel Orientation="Vertical">
+    <TextBox Text="{Binding MyProperty.Text}" MinHeight="80" MinWidth="200" Margin="100" Padding="10"
+             Background="AliceBlue"/>
+    <Button Content="Click Me" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+  </StackPanel>
+</Window>
