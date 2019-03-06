@@ -1,6 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Windows;
 
+using CrossTestApp.Models;
 using CrossTestApp.ViewModels;
 
 namespace CrossTestApp
@@ -21,7 +23,7 @@ namespace CrossTestApp
         {
             Debug.WriteLine("Button_Click");
             var viewmodel = DataContext as MainWindowViewModel;
-            viewmodel.MyProperty.Text = "Yeah!";
+            viewmodel.DoSomething();
         }
     }
 }

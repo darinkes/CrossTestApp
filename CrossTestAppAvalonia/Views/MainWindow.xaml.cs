@@ -26,7 +26,7 @@ namespace CrossTestAppAvalonia.Views
         {
             Debug.WriteLine("Button_Click");
             var viewmodel = DataContext as MainWindowViewModel;
-            viewmodel.MyProperty.Text = "Yeah!";
+            viewmodel.DoSomething();
         }
     }
 }

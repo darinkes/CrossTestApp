@@ -1,7 +1,12 @@
-﻿namespace CrossTestApp.Models
+﻿using System;
+using System.Collections.ObjectModel;
+
+namespace CrossTestApp.Models
 {
     public class TestModel : BaseModel
     {
+        public static readonly string DefaultText = "Start!";
+
         private string _text;
 
         public string Text
@@ -13,9 +18,12 @@
             }
         }
 
+        public ObservableCollection<DateTime> Collection { get; set; }
+
         public TestModel()
         {
-            Text = "Start";
+            Text = DefaultText;
+            Collection = new ObservableCollection<DateTime>();
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
   <StackPanel Orientation="Vertical">
     <TextBox Text="{Binding MyProperty.Text}" MinHeight="80" MinWidth="200" Margin="100" Padding="10"
              Background="AliceBlue"/>
+    <ListBox Items="{Binding MyProperty.Collection}" Height="80"/>
     <Button Content="Click Me" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
   </StackPanel>
 </Window>
